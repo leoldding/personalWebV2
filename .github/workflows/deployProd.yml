@@ -11,11 +11,11 @@ jobs:
             -   run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
             -   run: docker build -t leoldding/portfolio-frontend ./frontend
-            -   run: docker build -t leoldding/portfolio-backend ./backend
+            #-   run: docker build -t leoldding/portfolio-backend ./backend
             -   run: docker build -t leoldding/portfolio-nginx ./nginx
 
             -   run: docker push leoldding/portfolio-frontend
-            -   run: docker push leoldding/portfolio-backend
+            #-   run: docker push leoldding/portfolio-backend
             -   run: docker push leoldding/portfolio-nginx
 
             -   name: Generate deployment package
