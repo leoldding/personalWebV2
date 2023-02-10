@@ -1,14 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './components/Home.js';
+import Navbar from './components/Navbar.js';
 import './components/css/styles.css'
 class App extends React.Component {
 
     render() {
-        return(
+        return (
             <div>
-                <div id={"construction"}>
-                    <h1>MAIN PAGE IS UNDER CONSTRUCTION</h1>
-                    <p>Feel free to explore finished projects.</p>
-                </div>
+                <Router>
+                    <Navbar/>
+                    <Routes>
+                        <Route
+                            path={"/"}
+                            element={<Home />} />
+                    </Routes>
+                </Router>
             </div>
         )
     }

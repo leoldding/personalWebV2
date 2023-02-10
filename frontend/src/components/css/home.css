@@ -1,0 +1,14 @@
+.home_construction {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home_construction h1 {
+    font-size: 4rem;
+}
+
+.home_construction p {
+    font-size: 2rem;
+}
