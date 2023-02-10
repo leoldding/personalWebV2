@@ -4,7 +4,12 @@ class App extends React.Component {
 
     render() {
         return(
-            <h1>Leo Ding</h1>
+            <div>
+                <div id={"construction"}>
+                    <h1>MAIN PAGE IS UNDER CONSTRUCTION</h1>
+                    <p>Feel free to explore finished projects.</p>
+                </div>
+            </div>
         )
     }
 }

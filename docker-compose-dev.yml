@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile.dev
       context: ./nginx
     ports:
-      - '80:80'
+      - '3000:80'
   frontend:
     restart: always
     build:
@@ -17,3 +17,4 @@ services:
       - ./frontend:/app
     environment:
       - WDS_SOCKET_PORT=0
+      - WATCHPACK_POLLING=true
