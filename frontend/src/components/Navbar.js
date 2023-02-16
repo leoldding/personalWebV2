@@ -11,13 +11,13 @@ class Navbar extends React.Component {
                     <Link to={"/"} id={"navbar_title"}>LEO DING</Link>
                 </li>
                 <li>
-                    <Link to={"/coffee"}>COFFEE</Link>
+                    <Link to={"/coffee"} target={"_blank"}>COFFEE</Link>
                 </li>
                 <li>
-                    <Link to={"/todo"}>TO-DO</Link>
+                    <Link to={"/todo"} target={"_blank"}>TO-DO</Link>
                 </li>
                 <li>
-                    <Link to={"/chat"}>CHAT</Link>
+                    <Link to={"/chat"} target={"_blank"}>CHAT</Link>
                 </li>
             </div>
         )
